@@ -1,0 +1,21 @@
+.layout{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10vh 80vh 10vh;
+}
+.layout div{
+    font-size: 50px;
+    bottom: 1px;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.Header{
+    grid-column: span 3;
+}
+.Footer{
+    grid-column: span 3;
+}

@@ -1,0 +1,40 @@
+.box{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    transition-property: all;
+    transition-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1) ;
+    transition-delay: 2s;
+}
+.box:hover{
+    background-color: brown;
+    width: 300px;
+    transition-duration: 2s;
+}
+.animation{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 50%;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+@keyframes circle {
+    50%{
+        background-color:red;
+        width: 5px;
+        left: 100px;
+        top: 0px;
+    }
+    100%{
+        background-color: brown;
+        width: 200px;
+        left: 100px;
+        top: 0px;
+    }
+}
